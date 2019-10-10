@@ -6,11 +6,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/* Joe is one cool dude */
-/* This is groovy! *?
-/* I should get a merge conflict */
-/* Hey Joe... What the fuck is going on */
-
 @RestController
 public class GreetingController {
 
