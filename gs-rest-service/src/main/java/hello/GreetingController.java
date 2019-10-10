@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 /* should get a merge conflict */
 
+/* Joe is one cool dude! */
+
 @RestController
 public class GreetingController {
 
