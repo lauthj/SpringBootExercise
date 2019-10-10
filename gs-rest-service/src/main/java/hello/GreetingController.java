@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 /*Testing*/
 /* What up? */
 
+/* I should get a merge conflict */
+
 @RestController
 public class GreetingController {
 
