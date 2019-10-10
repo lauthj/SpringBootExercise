@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 /* Joe is one cool dude */
 
 /* I should get a merge conflict */
+/* Hey Joe... What the fuck is going on */
 
 @RestController
 public class GreetingController {
