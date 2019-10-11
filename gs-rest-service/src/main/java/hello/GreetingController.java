@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 /* I'm working on this */
 /* I'm working my ass off, this sucks!*/
+/* This is getting easier and easier */
 @RestController
 public class GreetingController {
 
