@@ -5,11 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-/* I'm working on this */
-/* I'm working my ass off, this sucks!*/
-/* This is getting easier and easier */
-
-/* Ya, this is easier now */
 
 @RestController
 public class GreetingController {
