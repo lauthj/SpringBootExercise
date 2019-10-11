@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/* What happened to my changes? */
+/* Change made by Editable branch */
 @RestController
 public class GreetingController {
 
