@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
     private static final String template = "Hello, %s!";
+    private static final String template2 = "Ahoy!, %s!";
+    private static final String template3 = "How are you?, %s!";
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping(value = "/greeting", method = RequestMethod.GET)
@@ -35,5 +37,17 @@ public class GreetingController {
     public Greeting hailing(@RequestParam(value="name", defaultValue="Sir Joe") String name) {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
+    }
+    
+    @RequestMapping(value = "/ahoy", method = RequestMethod.GET)
+    public Greeting ahoy(@RequestParam(value="name", defaultValue="Sir Joe") String name) {
+        return new Greeting(counter.incrementAndGet(),
+                            String.format(template2, name));
+    }
+    
+    @RequestMapping(value = "/howAreYou", method = RequestMethod.GET)
+    public Greeting howAreYou(@RequestParam(value="name", defaultValue="Sir Joe") String name) {
+        return new Greeting(counter.incrementAndGet(),
+                            String.format(template3, name));
     }
 }
