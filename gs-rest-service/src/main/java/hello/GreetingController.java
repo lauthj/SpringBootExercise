@@ -48,7 +48,13 @@ public class GreetingController {
     
     @RequestMapping(value = "/howAreYou", method = RequestMethod.GET)
     public Greeting howAreYou(@RequestParam(value="name", defaultValue="Sir Joe") String name) {
-        return new Greeting(counter.incrementAndGet(),
-                            String.format(template3, name));
+    	
+    	//validation
+    	Greeting greeting = new Greeting(0, name);
+    	if(greeting.getContent().equalsIgnoreCase("Sir") ) {
+        greeting = greeting(String.format(template3, name));
+        }
+    	else greeting = greeting("You got that shit wrong");
+		return greeting;
     }
 }
