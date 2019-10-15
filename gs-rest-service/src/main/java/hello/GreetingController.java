@@ -1,8 +1,6 @@
 package hello;
 
 import java.util.concurrent.atomic.AtomicLong;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -48,13 +46,12 @@ public class GreetingController {
                             String.format(template2, name));
     }
     
-    @Autowired
-	Greeting greeting;
+   
     @RequestMapping(value = "/howAreYou", method = RequestMethod.GET)
     public Greeting howAreYou(@RequestParam(value="name", defaultValue="Sir Joe") String name) {
     	
     	//validation
-    	//Greeting greeting = new Greeting(0, name);
+    	Greeting greeting = new Greeting(0, name);
     	if(greeting.getContent().equalsIgnoreCase("Sir") ) {
         greeting = greeting(String.format(template3, name));
         }
