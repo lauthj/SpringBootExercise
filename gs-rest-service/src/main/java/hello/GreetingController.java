@@ -46,7 +46,6 @@ public class GreetingController {
                             String.format(template2, name));
     }
     
-   
     @RequestMapping(value = "/howAreYou", method = RequestMethod.GET)
     public Greeting howAreYou(@RequestParam(value="name", defaultValue="Sir Joe") String name) {
     	
